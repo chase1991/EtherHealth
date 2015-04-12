@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  username        :string
+#  email           :string
+#  password        :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  password_digest :string
+#
+
 class User < ActiveRecord::Base
 	validates :username, presence: true, length: {maximum: 50}, 
 				uniqueness: {case_sensitive: false}
