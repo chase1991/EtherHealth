@@ -20,6 +20,7 @@
 
 Rails.application.routes.draw do
 
+  resources :filters
   resources :users
 
   root 'welcome_page#index'
@@ -31,6 +32,8 @@ Rails.application.routes.draw do
   get 'login' => 'session#index'
 
   get 'session/new'
+
+  get 'session/ask'
 
   post 'login' => 'session#create'
 
