@@ -20,6 +20,8 @@
 
 Rails.application.routes.draw do
 
+  resources :questions
+  resources :tags
   resources :filters
   resources :users
 
@@ -33,10 +35,16 @@ Rails.application.routes.draw do
 
   get 'session/new'
 
-  get 'session/ask'
+ # get 'session/ask'
 
   post 'login' => 'session#create'
 
+ # post 'submit' => 'ask_question#create'
+
+ # get 'ask' => 'ask_question#ask'
+
+ get 'ask' => 'questions#new'
+ 
   delete 'logout' => 'session#destroy'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
