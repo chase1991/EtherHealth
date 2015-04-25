@@ -5,7 +5,7 @@ Feature: ask a question
 	 be able to ask a question
 
 	Scenario: adding new question
-		Given I am on list of question page
+		Given I am on ask question page
 		When try to add a question
 		Then I should see NoMethodError
 
