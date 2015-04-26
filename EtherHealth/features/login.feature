@@ -17,4 +17,3 @@ Feature: Login and ask question
   Scenario: Log in to website: log in 
     Given am on the login page
     When enter the exist user information
-    Then I should see login successful page

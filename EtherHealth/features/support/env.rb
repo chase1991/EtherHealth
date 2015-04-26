@@ -3,6 +3,9 @@
 # newer version of cucumber-rails. Consider adding your own code to a new file
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
+Before do 
+	User.create(username: "tyu", email: "tyu@gmail.com", password: "123")
+end
 
 require 'cucumber/rails'
 
