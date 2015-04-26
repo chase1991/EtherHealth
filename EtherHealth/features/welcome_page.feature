@@ -6,11 +6,12 @@ Feature: Welcome user
 
 	Scenario: Stays in home page
 		Given I am on the welcome page
-		When I press "Home"
+		When I press "EtherHealth"
 		Then page should not change
 
 	Scenario: Redirect to login page
 		Given I am on the welcome page
+		Given I am not logged in
 		When I press "Login"
 		Then should go to login page
 

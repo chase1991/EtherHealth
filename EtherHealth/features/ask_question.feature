@@ -5,12 +5,12 @@ Feature: ask a question
 	 be able to ask a question
 
 	Scenario: adding new question
-		Given I am on ask question page
+		Given I am currently on ask question page
 		When try to add a question
 		Then I should see NoMethodError
 
 	Scenario: login as a new user
-		Given I am on list of question page
-		When I press Login
-		Then should go to login page
+		Given I am currently on ask question page
+		When I press "Login"
+		Then I should go to login page
 

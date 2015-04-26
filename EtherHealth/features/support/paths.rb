@@ -16,6 +16,9 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/'
 
+    when /^(?:|I )am on (.+)$/
+      '/questions'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
