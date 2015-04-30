@@ -12,8 +12,8 @@ Feature: Welcome user
 	Scenario: Redirect to login page
 		Given I am on the welcome page
 		Given I am not logged in
-		When I press "Login"
-		Then should go to login page
+		When I press the button "Login"
+		Then should go to login page from welcome page
 
 	Scenario: Sign up
 		Given I am on the welcome page

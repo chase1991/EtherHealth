@@ -20,11 +20,7 @@ end
 When /^enter the exist user information$/ do
   fill_in 'session[email]', :with => "tyu@gmail.com"
   fill_in 'session[password]', :with => "123"
-  click_button "Login"
-end
-
-Then /^I should see login successful page$/ do
-  page.should have_content('Home')
+  #click_button "Login"
 end
 
 When /^enter the wrong user information$/ do

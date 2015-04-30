@@ -6,11 +6,8 @@ Feature: ask a question
 
 	Scenario: adding new question
 		Given I am currently on ask question page
-		When try to add a question
-		Then I should see NoMethodError
 
 	Scenario: login as a new user
 		Given I am currently on ask question page
-		When I press "Login"
+		When I press "Login" on question page
 		Then I should go to login page
-
