@@ -1,7 +1,7 @@
 == README
 
 EtherHealth is a Medical App which aims to reduce medical errors.
-It aims to build a medical version of "StackOverflow" for pysicians.
+It aims to build a medical version of "StackOverflow" for physicians.
 
 This is the term project for CIT 597, Spring 2015.
 
