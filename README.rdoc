@@ -1,28 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+EtherHealth is a Medical App which aims to reduce medical errors.
+It aims to build a medical version of "StackOverflow" for pysicians.
 
-Things you may want to cover:
+This is the term project for CIT 597, Spring 2015.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Team Member: Shi Cheng, Qiannan Ling, Bincan Zou.
