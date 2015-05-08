@@ -20,7 +20,7 @@ end
 When /^enter the exist user information$/ do
   fill_in 'session[email]', :with => "tyu@gmail.com"
   fill_in 'session[password]', :with => "123"
-  #click_button "Login"
+  click_button "Login"
 end
 
 When /^enter the wrong user information$/ do

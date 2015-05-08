@@ -3,8 +3,19 @@
 # newer version of cucumber-rails. Consider adding your own code to a new file
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
+require 'simplecov'
+SimpleCov.start do
+	add_filter "/features/support/paths.rb"
+	add_filter "/features/step_definitions/ask_new_test_steps.rb"
+	add_filter "/features/support/selectors.rb"
+	add_filter "/features/step_definitions/filter_test_steps.rb"
+	add_filter "/features/step_definitions/ask_question_test_steps.rb"
+	add_filter "/features/step_definitions/answer_question_test_steps.rb"
+end
+
 Before do 
 	User.create(username: "tyu", email: "tyu@gmail.com", password: "123")
+	Question.create(description: "question for tyu", user_id: 1)
 end
 
 require 'cucumber/rails'
